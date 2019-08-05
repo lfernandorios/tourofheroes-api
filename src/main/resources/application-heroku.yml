@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        order_inserts: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 50
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://ec2-50-16-225-96.compute-1.amazonaws.com:5432/d6sfss2nltsd7a?ssl=false&sslfactory=org.postgresql.ssl.NonValidatingFactory
+    driver-class-name: org.postgresql.Driver
+    username: lkvtsotiptnqve
+    password: 6ee54a9af1ef63c1ac8c3a16b23d91fd85b773ffd7f262b92a99383c972001c5
+
+logging:
+  level:
+    root: INFO
+  file: heroapi.log

@@ -1,0 +1,12 @@
+# Server properties
+server:
+  servlet:
+    context-path: /tourofheroes-api
+  port: 8080
+# Spring properties
+spring:
+
+  profiles:
+    active: heroku
+  application:
+    name: tourofheroes-api
